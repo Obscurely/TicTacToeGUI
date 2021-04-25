@@ -1,4 +1,3 @@
-using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
@@ -155,6 +154,7 @@ namespace TicTacToeGUI
                 this.FindControl<Button>("ButtonPos8").Content = "";
                 this.FindControl<Button>("ButtonPos9").Content = "";
                 boxesUsed = 0;
+                currentSign = 'X';
             }
             else if (win.Equals("player o won"))
             {
@@ -172,6 +172,7 @@ namespace TicTacToeGUI
                 this.FindControl<Button>("ButtonPos8").Content = "";
                 this.FindControl<Button>("ButtonPos9").Content = "";
                 boxesUsed = 0;
+                currentSign = 'X';
             }
             else if (boxesUsed == 9)
             {
@@ -189,6 +190,7 @@ namespace TicTacToeGUI
                 this.FindControl<Button>("ButtonPos8").Content = "";
                 this.FindControl<Button>("ButtonPos9").Content = "";
                 boxesUsed = 0;
+                currentSign = 'X';
             }
         }
     }
